@@ -3,7 +3,7 @@ package Arrays;
 public class CountOddNumbers {
     public static void main(String[] args) {
 
-        int[] nums = {1,2,3,4,5,7,77,9};
+        int[] nums = {1,2,3,4,5,7,77,9,43};
         System.out.println(countEven(nums));
     }
 
