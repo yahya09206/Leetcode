@@ -15,6 +15,7 @@ public class FirstNegativeNumber {
                 return each;
             }
         }
+        // if no negatives are found
         return -1;
     }
 }
