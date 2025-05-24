@@ -5,7 +5,6 @@ public class ReverseArray {
 
         int[] nums = {1,2,3,4,5};
         reverseArray(nums);
-
     }
 
     public static void reverseArray(int[] arr){
