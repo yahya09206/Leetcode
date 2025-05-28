@@ -14,9 +14,9 @@ public class PositiveGreaterThanAvg {
         for (int i = 0; i <= arr.length - 1; i++){
             sum += arr[i];
         }
-        if (arr[i] > (double) sum / (arr.length)){
-            count++;
-        }
+
+        double average = (double) sum / arr.length;
+
         return count;
     }
 }
