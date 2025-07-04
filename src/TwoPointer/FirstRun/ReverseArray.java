@@ -21,7 +21,8 @@ public class ReverseArray {
             arr[left] = arr[right];
             arr[right] = temp;
 
-
+            left++;
+            right--;
 
         }
     }
