@@ -9,4 +9,10 @@ public class ReverseArray {
         System.out.println(reverse(nums));
     }
 
+    public static void reverse(int[] arr){
+
+        int left = 0;
+        int right = arr.length -1 ;
+    }
+
 }
