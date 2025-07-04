@@ -16,6 +16,12 @@ public class ReverseArray {
 
         while(left < right){
 
+            // store value of left pointer into temp variable
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+
+
 
         }
     }
