@@ -11,6 +11,9 @@ public class ReverseString {
     public static String reverseString(String str){
 
         // return str if null or empty
+        if (str == null || str.isEmpty()){
+            return str;
+        }
 
         // use char[] to keep track of each character in str
         //initialize l and r pointer
