@@ -9,13 +9,17 @@ public class RemoveDuplicates {
 
     public static int removeDuplicates(int[] arr){
 
-        int i = 0;
-        for (int j = 1; j <= arr.length -1; j++){
-            if (arr[i] != arr[j]){
-                arr[i + 1] = arr[j];
-                i++;
-            }
+
+        // Set left to 0
+        int l = 0;
+        // Loop thru array with r pointer
+        for(int r = 1; r < arr.length; r++){
+            // Check if current index nums[r] != nums[r-1]
+            // arr[r] = l
+            // nums[k++] = nums[r]
+            // return l
         }
-        return i + 1;
+
+        return l;
     }
 }
