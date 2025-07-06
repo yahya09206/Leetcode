@@ -16,10 +16,19 @@ public class ReverseArray {
         int l = 0;
         int r = arr.length - 1;
 //        - while start < end
-//                - init temp var to store value of start pointer arr[start]
+        while(l < r){
+            //    - init temp var to store value of start pointer arr[start]
+            int temp = arr[l];
 //                - swap left with right
+            arr[l] = arr[r];
 //                - swap right with temp
+            arr[r] = temp;
 //                - move both pointers closer to middle
+            l++;
+            r--;
+
+        }
+            return arr;
     }
 
 }
