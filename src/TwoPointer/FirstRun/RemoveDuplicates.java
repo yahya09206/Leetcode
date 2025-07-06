@@ -1,6 +1,4 @@
-package TwoPointer;
-
-import org.w3c.dom.ls.LSOutput;
+package TwoPointer.FirstRun;
 
 public class RemoveDuplicates {
     public static void main(String[] args) {

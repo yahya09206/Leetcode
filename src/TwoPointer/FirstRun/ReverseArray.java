@@ -12,21 +12,14 @@ public class ReverseArray {
 
     public static int[] reverse(int[] arr){
 
-        int left = 0;
-        int right = arr.length -1 ;
-
-        while(left < right){
-
-            // store value of left pointer into temp variable
-            int temp = arr[left];
-            arr[left] = arr[right];
-            arr[right] = temp;
-
-            left++;
-            right--;
-
-        }
-        return arr;
+//        - initialize start and end pointer
+        int l = 0;
+        int r = arr.length - 1;
+//        - while start < end
+//                - init temp var to store value of start pointer arr[start]
+//                - swap left with right
+//                - swap right with temp
+//                - move both pointers closer to middle
     }
 
 }
