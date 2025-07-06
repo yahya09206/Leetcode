@@ -22,11 +22,20 @@ public class ReverseString {
         int r = charArray.length - 1;
 
         // check l < r
-        // temp var to store value of charArray[l]
-        // charArray[l] = charArray[r]
-        // charArray[r] = temp
+        while(l < r){
 
-        // move pointers
+            // temp var to store value of charArray[l]
+            char temp = charArray[l];
+            // charArray[l] = charArray[r]
+            charArray[l] = charArray[r];
+            // charArray[r] = temp
+            charArray[r] = temp;
+
+            // move pointers
+            l++;
+            r--;
+
+        }
 
         // return new String(charArray)
         return new String(charArray);
