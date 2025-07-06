@@ -10,6 +10,11 @@ public class ReverseString {
 
     public static String reverseString(String str){
 
+        /**
+         * Strings in Java are immutable, meaning their contents cannot be changed directly.
+         * To modify the characters, the string must first be converted into a mutable char array.
+         */
+
         // return str if null or empty
         if (str == null || str.isEmpty()){
             return str;
