@@ -3,9 +3,12 @@ package TwoPointer.FirstRun;
 public class ReverseString {
     public static void main(String[] args) {
 
+        char[] arr = {'h','e','l','l','o'};
+        reverseString(arr);
+        System.out.println(arr);
     }
 
-    public void reverseString(char[] s){
+    public static void reverseString(char[] s){
 
         int l = 0;
         int r = s.length - 1;
