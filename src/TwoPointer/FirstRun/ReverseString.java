@@ -3,7 +3,7 @@ package TwoPointer.FirstRun;
 public class ReverseString {
     public static void main(String[] args) {
 
-        String sentence = "hello";
+        String sentence = "";
         String reversedString = reverseString(sentence);
         System.out.println(reversedString);
     }
