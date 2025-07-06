@@ -16,7 +16,10 @@ public class ReverseString {
         }
 
         // use char[] to keep track of each character in str
+        char[] charArray = str.toCharArray();
         //initialize l and r pointer
+        int l = 0;
+        int r = charArray.length - 1;
 
         // check l < r
         // temp var to store value of charArray[l]
@@ -26,6 +29,6 @@ public class ReverseString {
         // move pointers
 
         // return new String(charArray)
-
+        return new String(charArray);
     }
 }
