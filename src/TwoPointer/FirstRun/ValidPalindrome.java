@@ -22,16 +22,16 @@ public class ValidPalindrome {
             if (Character.isLetterOrDigit(currFirst)){
                 start++;
             }
-            //- decrement end if character is a letter or digit
+            //- decrement end if !Character.isLetterOrDigit(currEnd)
             else if (!Character.isLetterOrDigit(currEnd)){
                 end--;
             }
             else {
-                //- return false is left char is != to right char
+                //- return false if Character.toLowerCase(currFirst) != Character.toLowerCase(currEnd)
                 if (Character.toLowerCase(currFirst) != Character.toLowerCase(currEnd)){
                     return false;
                 }
-                //- else increase start and decrement end
+                //- increase start and decrement end
                 start++;
                 end--;
             }
