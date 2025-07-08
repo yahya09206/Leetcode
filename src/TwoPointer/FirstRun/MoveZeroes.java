@@ -17,6 +17,7 @@ public class MoveZeroes {
             // if right pointer != 0
             if (nums[r] != 0){
                 // store value of right pointer into temp variable
+                int temp = nums[r];
                 // store value of left pointer into right pointer
                 // store value of temp value into left pointer
                 // increment left pointer
