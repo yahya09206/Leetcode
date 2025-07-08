@@ -19,7 +19,9 @@ public class MoveZeroes {
                 // store value of right pointer into temp variable
                 int temp = nums[r];
                 // store value of left pointer into right pointer
+                nums[r] = nums[l];
                 // store value of temp value into left pointer
+                nums[l] = temp;
                 // increment left pointer
             }
         }
