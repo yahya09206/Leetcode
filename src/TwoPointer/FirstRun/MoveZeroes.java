@@ -1,12 +1,16 @@
 package TwoPointer.FirstRun;
 
+import java.util.Arrays;
+
 public class MoveZeroes {
     public static void main(String[] args) {
 
-
+        int[] numbers = {1,0,3,4,0,0,0,5,6,7};
+        moveZeroes(numbers);
+        System.out.println(Arrays.toString(moveZeroes(numbers)));
     }
 
-    public void moveZeroes(int[] nums){
+    public static int[] moveZeroes(int[] nums){
 
         // init left pointer
         int l = 0;
@@ -26,6 +30,7 @@ public class MoveZeroes {
                 l++;
             }
         }
+        return nums;
 
     }
 }
