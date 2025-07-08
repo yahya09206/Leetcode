@@ -13,11 +13,14 @@ public class MoveZeroes {
 
         // iterate through array with right pointer
         // this loop will increment right pointer
+        for (int r = 0; r < nums.length; r++){
             // if right pointer != 0
-                // store value of right pointer into temp variable
-                // store value of left pointer into right pointer
-                // store value of temp value into left pointer
-                // increment left pointer
+            // store value of right pointer into temp variable
+            // store value of left pointer into right pointer
+            // store value of temp value into left pointer
+            // increment left pointer
+        }
+
 
     }
 }
