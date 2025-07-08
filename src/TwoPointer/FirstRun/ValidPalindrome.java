@@ -13,12 +13,31 @@ public class ValidPalindrome {
         //- init start and end pointers
         int start = 0;
         int end = s.length() - 1;
-        //- 2 vars to keep track of char index
-        //- check if current charAt(i) is a lettorOrNumber for both sides
-        //- return false is left char is != to right char
-        //- else increase left and decrement right
-        //- return true if above = true
+        while(start <= end){
 
+            //- 2 vars to keep track of char index
+            char currFirst = s.charAt(start);
+            char currEnd = s.charAt(end);
+            //- increment start if character is a letter or digit
+            if (Character.isLetterOrDigit(currFirst)){
+                start++;
+            }
+            //- decrement end if character is a letter or digit
+            else if (!Character.isLetterOrDigit(currEnd)){
+                end--;
+            }
+            else {
+                //- return false is left char is != to right char
+                if (Character.toLowerCase(currFirst) != Character.toLowerCase(currEnd)){
+                    return false;
+                }
+                //- else increase start and decrement end
+                start++;
+                end--;
+            }
+        }
+
+        //- return true if above = true
         return true;
     }
 }
