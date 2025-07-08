@@ -23,9 +23,9 @@ public class MoveZeroes {
                 // store value of temp value into left pointer
                 nums[l] = temp;
                 // increment left pointer
+                l++;
             }
         }
-
 
     }
 }
