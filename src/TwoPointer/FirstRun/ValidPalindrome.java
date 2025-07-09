@@ -3,6 +3,8 @@ package TwoPointer.FirstRun;
 public class ValidPalindrome {
     public static void main(String[] args) {
 
+        String word = "racecare";
+        System.out.println(isPalindrome(word));
     }
     public static boolean isPalindrome(String s){
 
