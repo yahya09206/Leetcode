@@ -3,6 +3,8 @@ package TwoPointer.Revision3Days;
 public class ReverseString {
     public static void main(String[] args) {
 
+        String str = "remove";
+        System.out.println(reverseString(str));
     }
 
     public static void reverseString(char[] str){
@@ -13,7 +15,10 @@ public class ReverseString {
         while (l < r){
 
             char temp = str[l];
-
+            l = str[r];
+            r = str[temp];
+            l++;
+            r--;
         }
     }
 }
