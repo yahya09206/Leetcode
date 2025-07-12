@@ -39,7 +39,13 @@ public class RunningSum {
     public static int[] runningSum(int[] nums){
 
 
-        // iterate through loop
+        /**
+         * Approach
+         * Start at 2nd index
+         * loop through array
+         * add current index to next index
+         * return array
+         */
         for (int i = 1; i <= nums.length - 1; i++){
             nums[i] += nums[i-1];
         }
