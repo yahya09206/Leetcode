@@ -10,5 +10,8 @@ public class FizzBuzz {
     public static List<String> fizzBuz(int n){
 
         List<String> result = new ArrayList<>();
+        for (int i = 1; i <= n; i++){
+
+        }
     }
 }
