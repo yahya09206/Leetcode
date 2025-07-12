@@ -39,6 +39,7 @@ public class RunningSum {
     public static int[] runningSum(int[] nums){
 
 
+        // iterate through loop
         for (int i = 1; i <= nums.length - 1; i++){
             nums[i] += nums[i-1];
         }
