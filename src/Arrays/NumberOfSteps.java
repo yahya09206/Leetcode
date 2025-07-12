@@ -3,11 +3,7 @@ package Arrays;
 
 /**
  * Given an integer num, return the number of steps to reduce it to zero.
- *
  * In one step, if the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
- *
- *
- *
  * Example 1:
  *
  * Input: num = 14
@@ -23,16 +19,23 @@ package Arrays;
 public class NumberOfSteps {
     public static void main(String[] args) {
 
+        int num = 14;
+        int reduced = numberOfSteps(num);
+        System.out.println(reduced);
     }
     public static int numberOfSteps(int n){
 
-        for (int i = 1; i < n; i++){
-            if (i % 2 == 0){
-                i = i % 2;
+        // Needed to use a while loop
+        int steps = 0;
+        while (n > 0) {
+            if (n % 2 == 0) {
+                n /= 2;
             } else {
-                i = i - 1;
+                n -= 1;
             }
+            steps++;
         }
-        return n;
+
+        return steps;
     }
 }
