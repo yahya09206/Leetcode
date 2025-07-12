@@ -1,6 +1,8 @@
+package Strings;
+
 import java.util.Arrays;
 
-public class Strings {
+public class IsAnagram {
     public static void main(String[] args) {
 
         String str1 = "anagram";
