@@ -1,4 +1,4 @@
-package TwoPointer.Revision3Days;
+package TwoPointer.Revised3Days;
 
 public class ReverseString {
     public static void main(String[] args) {

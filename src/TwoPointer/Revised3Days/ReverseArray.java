@@ -1,4 +1,4 @@
-package TwoPointer.Revision3Days;
+package TwoPointer.Revised3Days;
 
 import java.util.Arrays;
 

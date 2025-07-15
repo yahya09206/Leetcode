@@ -3,41 +3,22 @@ package TwoPointer.FirstRun;
 public class ReverseString {
     public static void main(String[] args) {
 
-        String sentence = "";
-        String reversedString = reverseString(sentence);
-        System.out.println(reversedString);
+        char[] arr = {'h','e','l','l','o'};
+        reverseString(arr);
+        System.out.println(arr);
     }
 
-    public static String reverseString(String str){
+    public static void reverseString(char[] s){
 
-        // return str if null or empty
-        if (str == null || str.isEmpty()){
-            return str;
-        }
-
-        // use char[] to keep track of each character in str
-        char[] charArray = str.toCharArray();
-        //initialize l and r pointer
         int l = 0;
-        int r = charArray.length - 1;
+        int r = s.length - 1;
 
-        // check l < r
         while(l < r){
-
-            // temp var to store value of charArray[l]
-            char temp = charArray[l];
-            // charArray[l] = charArray[r]
-            charArray[l] = charArray[r];
-            // charArray[r] = temp
-            charArray[r] = temp;
-
-            // move pointers
+            char temp = s[l];
+            s[l] = s[r];
+            s[r] = temp;
             l++;
             r--;
-
         }
-
-        // return new String(charArray)
-        return new String(charArray);
     }
 }
