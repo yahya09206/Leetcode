@@ -10,6 +10,7 @@ public class ReverseString {
 
     public static void reverseString(char[] s){
 
+        // init left and right pointer
         int l = 0;
         int r = s.length - 1;
 
