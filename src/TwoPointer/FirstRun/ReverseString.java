@@ -14,6 +14,7 @@ public class ReverseString {
         int l = 0;
         int r = s.length - 1;
 
+        // as long as left is smaller than right pointer
         while(l < r){
             char temp = s[l];
             s[l] = s[r];
