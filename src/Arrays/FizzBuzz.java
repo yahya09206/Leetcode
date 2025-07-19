@@ -26,6 +26,7 @@ public class FizzBuzz {
 
         // new array list
         List<String> result = new ArrayList<>();
+        // iterate throug list
         for (int i = 1; i <= n; i++){
             if (i % 3 == 0 && i % 5 == 0){
                 result.add("FizzBuzz");
