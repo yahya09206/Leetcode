@@ -3,7 +3,7 @@ package Strings;
 public class ReverseString {
     public static void main(String[] args) {
 
-        String str = "hello";
+        String str = "wired";
         System.out.println(reverseString(str));
     }
 
